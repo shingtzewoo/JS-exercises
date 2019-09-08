@@ -15,7 +15,7 @@ describe('add', function() {
 });
 
 describe('subtract', function() {
-	xit('subtracts numbers', function() {
+	it('subtracts numbers', function() {
 		expect(calculator.subtract(10,4)).toEqual(6);
 	});
 });
