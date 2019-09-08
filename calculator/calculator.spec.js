@@ -5,11 +5,11 @@ describe('add', function() {
 		expect(calculator.add(0,0)).toEqual(0);
 	});
 
-	xit('adds 2 and 2', function() {
+	it('adds 2 and 2', function() {
 		expect(calculator.add(2,2)).toEqual(4);
 	});
 
-	xit('adds positive numbers', function() {
+	it('adds positive numbers', function() {
 		expect(calculator.add(2,6)).toEqual(8);
 	});
 });
