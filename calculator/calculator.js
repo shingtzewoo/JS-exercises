@@ -6,8 +6,11 @@ function subtract (a, b) {
 	return a - b;
 }
 
-function sum () {
-	
+function sum (arr) {
+	let result = arr.reduce(function(total, current) {
+		return total += current;
+	}, 0);
+	return result;
 }
 
 function multiply () {
