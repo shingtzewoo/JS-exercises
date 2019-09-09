@@ -25,24 +25,12 @@ function power(a, b) {
 }
 
 function factorial(x) {
-	let result = 1;
-	let counter = 1;
-	if (x === 0 || x === 1) {
-		return result;
-	} else {
-		while (counter < x) {
-			result *= (x*counter)
-			counter++;
-		}
-	}
-	return result;
-}
-
-function factorial(x) {
 	let arr = [];
+	//convert x and its descendants into an array, all the way til 1
 	for (let i = 1; i <= x; i++) {
 		arr.push(i);
 	}
+	//using the reduce function on the array
 	let result = arr.reduce(function(total, current) {
 		return total *= current;
 	}, 1);
